@@ -4,6 +4,7 @@ import Image from "next/image";
 import Logo from "../../public/Logo.png";
 import { useState } from "react";
 import Link from "next/link";
+import NavLink from "../components/NavLink";
 
 export default function Nav() {
   const [navState, setNavState] = useState(true);
@@ -18,7 +19,7 @@ export default function Nav() {
         <Image src={Logo} width="50" height="50" alt="site logo" />
 
         {/* MOBILE VIEW MENU BUTTON */}
-        <button onClick={handleClick} className="block md:hidden">
+        <button onClick={handleClick} className="block sm:hidden">
           <div className="p-[5px] border flex flex-col gap-1 hover:cursor-pointer  hover:bg-[#3232324f] ">
             {navState ? (
               "x"
@@ -33,52 +34,26 @@ export default function Nav() {
         </button>
 
         {/* DESKTOP VIEW NAV LINKS */}
-        <div className="hidden md:block">Hello there </div>
+        <ul className="hidden sm:flex gap-4 list-none ">
+          <NavLink title="Home" href="#home" />
+          <NavLink title="Services" href="#services" />
+          <NavLink title="Who we are" href="#who-we-are" />
+          <NavLink title="Contact us" href="#contact-us" />
+          <NavLink title="Get Started" href="#get-started" />
+        </ul>
       </nav>
 
       {/* MOBILE VIEW NAVLINKS */}
-      <ul className={` flex flex-col gap-1 ${navState ? "block" : "hidden"}`}>
-        <li className="w-full">
-          <Link
-            href="#services"
-            className="block w-full h-full px-2.5 py-[5px] hover:bg-[yellow]"
-          >
-            Home
-          </Link>
-        </li>
-
-        <li className="w-full">
-          <Link
-            href="#services"
-            className="block w-full h-full px-2.5 py-[5px] hover:bg-[yellow]"
-          >
-            Services
-          </Link>
-        </li>
-        <li className="w-full">
-          <Link
-            href="#about"
-            className="block w-full h-full px-2.5 py-[5px] hover:bg-[yellow]"
-          >
-            Who we are
-          </Link>
-        </li>
-        <li className="w-full">
-          <Link
-            href="contact"
-            className="block w-full h-full px-2.5 py-[5px] hover:bg-[yellow]"
-          >
-            Contact us
-          </Link>
-        </li>
-        <li className="w-full">
-          <Link
-            href="#about"
-            className="block w-full h-full px-2.5 py-[5px] hover:bg-[yellow]"
-          >
-            Get Started
-          </Link>
-        </li>
+      <ul
+        className={` flex flex-col gap-1 sm:hidden ${
+          navState ? "block" : "hidden"
+        }`}
+      >
+        <NavLink title="Home" href="#home" />
+        <NavLink title="Services" href="#services" />
+        <NavLink title="Who we are" href="#who-we-are" />
+        <NavLink title="Contact us" href="#contact-us" />
+        <NavLink title="Get Started" href="#get-started" />
       </ul>
     </header>
   );

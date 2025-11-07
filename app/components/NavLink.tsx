@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function NavLinks({
+export default function NavLink({
   title,
   href,
 }: {
@@ -11,7 +11,7 @@ export default function NavLinks({
     <li className="w-full">
       <Link
         href={href}
-        className="block w-full h-full px-2.5 py-[5px] hover:bg-[yellow]"
+        className="block w-full h-full px-2.5 py-[5px] hover:bg-[yellow] border sm:text-nowrap sm:text-[0.8rem] md:text-[1rem] lg:text-[1.rem]"
       >
         {title}
       </Link>
