@@ -3,7 +3,6 @@
 import Image from "next/image";
 import Logo from "../../public/Logo.png";
 import { useState } from "react";
-import Link from "next/link";
 import NavLink from "../components/NavLink";
 
 export default function Nav() {
