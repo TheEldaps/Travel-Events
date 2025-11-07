@@ -4,6 +4,7 @@ import Image from "next/image";
 import Logo from "../../public/Logo.png";
 import { useState } from "react";
 import NavLink from "../components/NavLink";
+import Button from "../components/Button";
 
 export default function Nav() {
   const [navState, setNavState] = useState(true);
@@ -33,12 +34,12 @@ export default function Nav() {
         </button>
 
         {/* DESKTOP VIEW NAV LINKS */}
-        <ul className="hidden sm:flex gap-4 list-none ">
+        <ul className="hidden sm:flex items-center gap-4 list-none ">
           <NavLink title="Home" href="#home" />
           <NavLink title="Services" href="#services" />
           <NavLink title="Who we are" href="#who-we-are" />
           <NavLink title="Contact us" href="#contact-us" />
-          <NavLink title="Get Started" href="#get-started" />
+          <Button title="Get Started" />
         </ul>
       </nav>
 
