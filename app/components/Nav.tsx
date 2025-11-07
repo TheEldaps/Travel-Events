@@ -16,7 +16,13 @@ export default function Nav() {
   return (
     <header className="px-[5%] pt-2.5 border-b">
       <nav className="flex justify-between items-center  mb-2.5 ">
-        <Image src={Logo} width="50" height="50" alt="site logo" />
+        <Image
+          src={Logo}
+          width="50"
+          height="50"
+          alt="site logo"
+          className="h-auto sm:w-20"
+        />
 
         {/* MOBILE VIEW MENU BUTTON */}
         <button onClick={handleClick} className="block sm:hidden">
@@ -34,7 +40,7 @@ export default function Nav() {
         </button>
 
         {/* DESKTOP VIEW NAV LINKS */}
-        <ul className="hidden sm:flex items-center gap-4 list-none ">
+        <ul className="hidden ml-[8%] sm:flex items-center gap-4 list-none grow">
           <NavLink title="Home" href="#home" />
           <NavLink title="Services" href="#services" />
           <NavLink title="Who we are" href="#who-we-are" />
