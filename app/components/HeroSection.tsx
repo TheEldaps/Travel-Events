@@ -9,7 +9,7 @@ export default function HeroSection() {
         Where Travel, Fun and Easy Planning Comes{" "}
         <br className="hidden lg:inline" /> together
       </h1>
-      <Button title="Book a Vacation" />
+      <Button title="Book a Vacation" text="1rem" />
       <Image
         src={HeroImage}
         width="1000"
@@ -17,7 +17,6 @@ export default function HeroSection() {
         alt="hero section image"
         className="mt-5 rounded-b-2xl block mx-auto w-[85%] h-auto"
       />
-      <div>Vacation/Events Made Easy</div>
     </section>
   );
 }
