@@ -7,11 +7,13 @@ export default function EventsSection() {
     return (
         <section className='bg-[#FCF7FF] py-10 px-[5%]'>
 
-            <div className='flex flex-col lg:flex-row'>
+            <div className='sm:flex justify-between'>
                 <h2 className='text-[2rem] font-bold mb-4 leading-9'>Upcoming Events <br /><span className='text-[#026EFF]'>You Cannot Miss! </span></h2>
-                <p className='text-[0.8rem] mb-[30px]'>See what's coming soon and find the perfect experience  <Link href='/services' className='underline'>See All Services &rarr;</Link></p>
+
+                <p className='flex text-[0.8rem] mb-[30px] sm:items-end gap-2'>See what's coming soon and find the perfect experience. <br /> <Link href='/services' className='underline hover:text-[#000] block'>  See All Services &rarr;</Link>
+                </p>
             </div>
-            <div className='sm:flex'>
+            <div className='sm:flex sm:gap-10'>
                 <Events image={EventsImage1} title='Hawai Honolulu' description='On Beach activities such as Hula and Ukulele lessons, Fitness centre with ocean views, outdoor pool with poolside bar, live music and entertainment, shops and dinning within walking distance, club level benefits: Rooms with club in the name include access to the lounge featuring daily breakfast buffet and evening happy hour with drinks and appetizers.' />
 
                 <Events image={EventsImage2} title='Barbados 2026' description='accommodation at an all-inclusive resort, complete with gourmet dining, unlimited beverages, and seamless roun-trip airport transfers. Enjoy exclusive access to world-class amenities and activities, with every detail carefully arranged for your comfort. As a special bonus, celebrate before your trip with a catered pre-travel party. ' />
