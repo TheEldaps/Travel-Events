@@ -14,7 +14,7 @@ export default function Nav() {
   }
 
   return (
-    <header className={`px-[5%] w-full bg-white pt-2.5 border-b ${navState? 'block' : 'sticky top-0 '}`}>
+    <header className={`px-[5%] w-full bg-white pt-2.5 z-1 border-b ${navState ? 'block' : 'sticky top-0 '}`}>
       <nav className="flex justify-between items-center  mb-2.5 ">
         <Image
           src={Logo}
@@ -51,9 +51,8 @@ export default function Nav() {
 
       {/* MOBILE VIEW NAVLINKS */}
       <ul
-        className={` flex flex-col gap-1 sm:hidden ${
-          navState ? "block" : "hidden"
-        }`}
+        className={` flex flex-col gap-1 sm:hidden ${navState ? "block" : "hidden"
+          }`}
       >
         <NavLink title="Home" href="#home" />
         <NavLink title="Services" href="#services" />
