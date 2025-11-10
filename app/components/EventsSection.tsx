@@ -1,12 +1,21 @@
 import Link from 'next/link'
+import Events from '../components/Events'
+import EventsImage1 from '../../public/EventsImg1.png'
+import EventsImage2 from '../../public/EventsImg2.png'
 
 export default function EventsSection() {
     return (
-        <section>
+        <section className='bg-[#FCF7FF] py-10 px-[5%]'>
 
-            <div>
-                <h2>Upcoming Events <br /><span className='text-[#026EFF]'>You Cannot Miss! </span></h2>
-                <p>See what's coming soon and find the perfect experience  <Link href='/services' className='underline'>See All Services &rarr;</Link></p>
+            <div className='flex flex-col lg:flex-row'>
+                <h2 className='text-[2rem] font-bold mb-4 leading-9'>Upcoming Events <br /><span className='text-[#026EFF]'>You Cannot Miss! </span></h2>
+                <p className='text-[0.8rem] mb-[30px]'>See what's coming soon and find the perfect experience  <Link href='/services' className='underline'>See All Services &rarr;</Link></p>
+            </div>
+            <div className='sm:flex'>
+                <Events image={EventsImage1} title='Hawai Honolulu' description='On Beach activities such as Hula and Ukulele lessons, Fitness centre with ocean views, outdoor pool with poolside bar, live music and entertainment, shops and dinning within walking distance, club level benefits: Rooms with club in the name include access to the lounge featuring daily breakfast buffet and evening happy hour with drinks and appetizers.' />
+
+                <Events image={EventsImage2} title='Barbados 2026' description='accommodation at an all-inclusive resort, complete with gourmet dining, unlimited beverages, and seamless roun-trip airport transfers. Enjoy exclusive access to world-class amenities and activities, with every detail carefully arranged for your comfort. As a special bonus, celebrate before your trip with a catered pre-travel party. ' />
+
             </div>
 
 
