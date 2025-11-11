@@ -43,7 +43,7 @@ export default function Nav() {
         <ul className="hidden ml-[8%] sm:flex items-center gap-4 list-none grow">
           <NavLink title="Home" href="#home" />
           <NavLink title="Services" href="#services" />
-          <NavLink title="Who we are" href="#who-we-are" />
+          <NavLink title="Who we are" href="#about-us" />
           <NavLink title="Contact us" href="#contact-us" />
           <Button title="Get Started" />
         </ul>
