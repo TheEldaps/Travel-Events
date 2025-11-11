@@ -1,6 +1,6 @@
 import Testimonials from './Testimonials'
 
-export default function Testimonials() {
+export default function TestimonialsSection() {
   return (
     <section>
       <div>
@@ -8,9 +8,9 @@ export default function Testimonials() {
       </div>
 
       <div>
-        <Testimonials />
-        <Testimonials />
-        <Testimonials />
+        <Testimonials image={ } comment='' name='' />
+        <Testimonials image={ } comment='' name='' />
+        <Testimonials image={ } comment='' name='' />
       </div>
     </section>
   )
