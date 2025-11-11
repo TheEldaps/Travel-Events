@@ -10,7 +10,7 @@ export default function TestimonialsSection() {
         <h2>Hear from Our <span>Happy Travellers</span></h2>
       </div>
 
-      <div>
+      <div className='md:flex'>
         <Testimonials
           image={CommentersImage1}
           comment='I’ve been on six group trips with Travel Made Easy by Nicky, and every single one has been unforgettable. Nicky is kind, thoughtful, and always goes the extra mile to make sure everyone has an amazing experience.'

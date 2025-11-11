@@ -7,7 +7,7 @@ import NavLink from "../components/NavLink";
 import Button from "../components/Button";
 
 export default function Nav() {
-  const [navState, setNavState] = useState(true);
+  const [navState, setNavState] = useState(false);
 
   function handleClick() {
     setNavState((prev) => !prev);
