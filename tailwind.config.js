@@ -12,5 +12,6 @@ module.exports = {
       },
     },
   },
+  safelist: [rotate - [20], rotate - [20], rotate - [0]],
   plugins: [],
 };
