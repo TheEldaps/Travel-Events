@@ -12,6 +12,6 @@ module.exports = {
       },
     },
   },
-  safelist: [rotate - [20], rotate - [20], rotate - [0]],
+  safelist: ["sm:rotate-[-5deg]", "sm:rotate-[5deg]", "sm:rotate-[0deg]"],
   plugins: [],
 };

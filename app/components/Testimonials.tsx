@@ -6,15 +6,17 @@ export default function Testimonials({
   comment,
   name,
   rotate,
+  origin,
 }: {
   image: StaticImageData;
   comment: string;
   name: string;
   rotate: string;
+  origin: string;
 }) {
   return (
     <div
-      className={`border rounded-[5%] p-2 mb-10 mx-auto max-w-[250px] rotate-[12deg]`}
+      className={`border rounded-[5%] p-2 mb-10 mx-auto max-w-[250px] transform sm:${rotate} ${origin}`}
     >
       <Image
         src={image}
