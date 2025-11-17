@@ -1,9 +1,10 @@
 import Nav from "./components/Nav";
 import HeroSection from "./components/HeroSection";
-import AboutSection from './components/AboutSection'
-import EventsSection from './components/EventsSection'
+import AboutSection from "./components/AboutSection";
+import EventsSection from "./components/EventsSection";
 import ServiceSection from "./components/ServiceSection";
 import TestimonialsSection from "./components/TestimonialsSection";
+import JourneySection from "./components/JourneySection";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <EventsSection />
       <ServiceSection />
       <TestimonialsSection />
+      <JourneySection />
     </>
   );
 }
