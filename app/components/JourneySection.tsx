@@ -8,19 +8,19 @@ import JourneyImage6 from "../../public/JourneyImage6.png";
 
 export default function JourneySection() {
   return (
-    <section className="px-[10%] bg-[#F2F7FF] pb-5">
-      <h2>
+    <section className="px-[10%] bg-[#F2F7FF] pt-[30px] pb-5">
+      <h2 className='text-[1rem] font-bold font-[dmsans] text-center mb-[30px]'>
         Our Journey Through <br />
-        <span className="text-[#8D8D8D]">images</span>
+        <span className="text-[#8D8D8D] font-[dmserif]">images</span>
       </h2>
 
-      <section className="">
-        <div className="flex gap-[3%] mb-5">
+      <section >
+        <div className="flex gap-[5%] mb-5 justify-center">
           <JourneyImageCards image={JourneyImage1} imageheight="h-100%" />
           <JourneyImageCards image={JourneyImage2} imageheight="h-75%" />
           <JourneyImageCards image={JourneyImage3} imageheight="h-50%" />
         </div>
-        <div className="flex gap-[3%]">
+        <div className="flex gap-[5%] justify-center">
           <JourneyImageCards image={JourneyImage4} imageheight="h-50%" />
           <JourneyImageCards image={JourneyImage5} imageheight="h-75%" />
           <JourneyImageCards image={JourneyImage6} imageheight="h-100%" />
