@@ -11,7 +11,7 @@ export default function AboutSection() {
         <p className='mb-4 text-justify px-[]'>Travel & Events Made Easy by Nicky is a full-service travel and event planning company specializing in unforgettable group vacations, seamless destination experiences, and beautifully coordinated events. Founded and led by Nickia Fulton, a passionate travel expert and event coordinator, the company focuses on creating stress-free, personalized experiences that bring people together through travel, celebration, and connection. With 15+ years of travel and event planning experience 20 + group trips and 100+ special events including weddings, anniversaries, We are Known for blending luxury, fun, affordability, and connection in every experience</p>
       </section>
 
-      <section className='border flex sm:flex-col mx-auto lg:flex-row gap-3 sm:w-[50%] max-w-[400px] lg:max-w-[430px] px-[5%] sm:py-[4%]'>
+      <section className=' flex sm:flex-col mx-auto lg:flex-row gap-3 sm:w-[50%] max-w-[400px] lg:max-w-[430px] px-[5%] sm:py-[4%]'>
         <div className='flex grow relative max-w-[200px] min-w-[170px]  sm:w-[50%] sm:items-center'>
           <Image src={AboutImg1} width='312' height='453' alt='About section Image 1' className='rounded-2xl w-full h-auto max-w-[200px] sm:w' />
           <Image src={AboutImg2} width='150' height='189' alt='About section Image 1' className='rounded-2xl absolute top-1/4 right-[-28%] w-[45%] max-w-[90px] h-auto' />
