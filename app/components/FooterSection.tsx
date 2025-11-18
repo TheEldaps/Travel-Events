@@ -9,12 +9,14 @@ export default function FooterSection() {
         <section className='bg-[#151515] text-white px-[10%] py-[40px]'>
             <section className='flex justify-between mb-10'>
                 <div className='w-[20%] '>
-                    <Image src={Logo} width='300' height='300' alt='Website logo' className=' border border-black' />
-                    <p className='text-[0.5rem]  text-center '>Where travel, fun and easy planning comes together</p>
+                    <Link href='#home'>
+                        <Image src={Logo} width='300' height='300' alt='Website logo' className=' border-black' />
+                        <p className='text-[0.5rem]  text-center '>Where travel, fun and easy planning comes together</p>
+                    </Link>
                 </div>
-                <div className=''>
+                <div className='text-[0.8rem]'>
                     <h3 className='font-bold'>Contact</h3>
-                    <ul>
+                    <ul className='flex flex-col gap-1 mb-2'>
                         <li>Maryland, USA</li>
                         <li>(443) 406-8048</li>
                         <li>TMEbyNicky@gmail.com</li>
@@ -26,7 +28,7 @@ export default function FooterSection() {
                     </div>
                 </div>
             </section>
-            <section className='border-t border-white'>
+            <section className='border-t border-white pt-2'>
                 <p className='text-center text-[0.8rem]'>Copyright Traveleventsmadeeaasy. All Rights Reserved</p>
             </section>
         </section>

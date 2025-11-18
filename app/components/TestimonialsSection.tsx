@@ -2,16 +2,13 @@ import Testimonials from "./Testimonials";
 import CommentersImage1 from "../../public/CommentersImage1.png";
 import CommentersImage2 from "../../public/CommentersImage2.png";
 import CommentersImage3 from "../../public/CommentersImage3.png";
+import Heading from "./Heading";
+import Button from "./Button";
 
 export default function TestimonialsSection() {
   return (
-    <section className="px-[10%] border">
-      <div>
-        <h2 className="text-[1rem] font-bold border text-center mb-10">
-          Hear from Our <br />{" "}
-          <span className="text-[#8D8D8D] font-[dmserif]">Happy Travelers</span>
-        </h2>
-      </div>
+    <section className="px-[10%] my-20">
+      <Heading heading1='Hear from Our' heading2='Happy Travelers' />
 
       <div className=" sm:flex gap-10 ">
         <Testimonials
@@ -36,6 +33,7 @@ export default function TestimonialsSection() {
           origin="origin-top-left"
         />
       </div>
+      <div><Button title='Book a Vacation' /></div>
     </section>
   );
 }

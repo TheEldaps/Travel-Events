@@ -1,5 +1,5 @@
 import FormItems from "./FormItems"
-
+import Heading from "./Heading"
 
 export default function RequestQuoteSection() {
     return (
@@ -7,7 +7,7 @@ export default function RequestQuoteSection() {
             <section className='mx-auto max-w-[1000px] md:bg-[url("/RequestQuoteBgImage.png")] bg-no-repeat bg-[position:center_bottom] 
  bg-contain pb-10'>
                 <div className=' text-center text-[1rem] mb-10'>
-                    <h2 className=''>Request a <span>Quote. </span></h2>
+                    <Heading heading1='Request a ' heading2='Quote' />
                     <p>Please provide the following information </p>
                 </div>
 
