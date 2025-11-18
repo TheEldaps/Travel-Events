@@ -6,6 +6,7 @@ import ServiceSection from "./components/ServiceSection";
 import TestimonialsSection from "./components/TestimonialsSection";
 import JourneySection from "./components/JourneySection";
 import RequestQuoteSection from "./components/RequestQuoteSection";
+import FooterSection from "./components/FooterSection";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <TestimonialsSection />
       <JourneySection />
       <RequestQuoteSection />
+      <FooterSection />
     </>
   );
 }
