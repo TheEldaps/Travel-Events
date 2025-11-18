@@ -6,8 +6,9 @@ export default function RequestQuoteSection() {
         <section className='px-[5%] md:px-[10%] pt-10 mb-10   '>
             <section className='mx-auto max-w-[1000px] md:bg-[url("/RequestQuoteBgImage.png")] bg-no-repeat bg-[position:center_bottom] 
  bg-contain pb-10'>
-                <div className=' text-center text-[1rem] mb-10'>
-                    <Heading heading1='Request a ' heading2='Quote' />
+                <div className=' text-center text-[1rem] mb-5'>
+                    <Heading heading1='Request a ' heading2='Quote' wrap={false
+                    } />
                     <p>Please provide the following information </p>
                 </div>
 
@@ -28,7 +29,7 @@ export default function RequestQuoteSection() {
 
                         <FormItems label='Time' placeholder='Select Time' />
                     </div>
-                    <div className='mb-10'>
+                    <div className='mb-5'>
                         <label htmlFor="" className='font-bold font-[dmsans] text-[0.8rem]' >Additional Information</label>
 
                         <textarea name="" id="" rows={5} placeholder='Type your message ' className='px-2 py-1 w-full bg-[#F6F6F6] text-[0.8rem]'></textarea>

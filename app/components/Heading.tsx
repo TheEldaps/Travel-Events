@@ -1,10 +1,12 @@
 import React from 'react'
 
-export default function ({ heading1, heading2, wrap }: { heading1: string, heading2: string, wrap: string }) {
+export default function ({ heading1, heading2, wrap = true
+}: { heading1: string, heading2: string, wrap?: boolean }) {
     return (
         <div>
-            <h2 className="text-[3rem] font-[dmsans] font-bold text-center mb-10">
-                {heading1} <br />
+            <h2 className="text-[2.5rem] sm:text-[3rem] font-[dmsans] font-bold text-center mb-5">
+                {heading1}   <br className={
+                    `${wrap ? 'block' : 'hidden'}`} />
                 <span className="text-[#8D8D8D] font-[dmserif]">{heading2}</span>
             </h2>
         </div>

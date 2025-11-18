@@ -10,7 +10,7 @@ import Heading from "./Heading";
 export default function JourneySection() {
   return (
     <section className="px-[10%] bg-[#F2F7FF] pt-[30px] pb-5">
-      <Heading heading1='Our Journey Through' heading2='Images' />
+      <Heading heading1='Our Journey Through' heading2='images' />
 
       <section >
         <div className="flex gap-[5%] mb-5 justify-center">

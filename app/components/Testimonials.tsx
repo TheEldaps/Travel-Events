@@ -17,7 +17,7 @@ export default function Testimonials({
 }) {
   return (
     <div
-      className={`border rounded-[5%] p-2 mb-10 mx-auto max-w-[250px] transform sm:${rotate} ${origin}`}
+      className={`border border-[#B0B0B0] rounded-[5%] p-2 mb-10 mx-auto max-w-[250px] transform sm:${rotate} ${origin}`}
     >
       <Image
         src={image}
