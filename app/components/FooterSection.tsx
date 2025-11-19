@@ -6,7 +6,7 @@ import FacebookLogo from '../../public/FacebookLogo.png'
 
 export default function FooterSection() {
     return (
-        <section className='bg-[#151515] text-white px-[10%] py-[40px]'>
+        <section id='contact-us' className='bg-[#151515] text-white px-[10%] py-10'>
             <section className='flex justify-between mb-10'>
                 <div className='w-[20%] '>
                     <Link href='#home'>

@@ -17,7 +17,7 @@ export default function HeroSection() {
         alt="hero section image"
         className="mt-5 rounded-b-2xl block mx-auto w-[85%] h-auto"
       />
-      <p className='flex justify-between pt-[20px] text-[#026EFF]'><span>Vacation/Events</span><span>Made</span><span>Easy</span></p>
+      <p className='flex justify-between pt-5 text-[#026EFF]'><span>Vacation/Events</span><span>Made</span><span>Easy</span></p>
     </section>
   );
 }

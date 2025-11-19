@@ -11,7 +11,7 @@ export default function EventsSection() {
                 <h2 className='text-[2rem] font-bold mb-4 leading-9'>Upcoming Events <br /><span className='text-[#026EFF] '>You Cannot Miss! </span></h2>
 
                 <p className='flex sm:flex-col text-[0.8rem] mb-[30px] sm:justify-end gap-2 max-w-[40%]'>See what's coming soon and find the perfect experience.
-                    <Link href='/services' className='underline hover:text-[#3636367b]  block'>  See All Services &rarr;</Link>
+                    <Link href='#services' className='underline hover:text-[#3636367b]  block'>  See All Services &rarr;</Link>
                 </p>
             </div>
             <div className='md:flex sm:gap-10'>
