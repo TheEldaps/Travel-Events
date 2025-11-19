@@ -8,10 +8,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-dm-sans)", "sans-serif"],
+        dmsans: ["var(--font-dm-sans)", "sans-serif"],
+        dmserif: ["var(--font-dm-serif)", "sans-serif"],
       },
     },
-  },
-  safelist: ["sm:rotate-[-5deg]", "sm:rotate-[5deg]", "sm:rotate-[0deg]"],
-  plugins: [],
-};
+    safelist: ["sm:rotate-[-5deg]", "sm:rotate-[5deg]", "sm:rotate-[0deg]"],
+    plugins: [],
+  }
+}
