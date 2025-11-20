@@ -30,7 +30,7 @@ export default function RequestQuoteSection() {
                         <FormItems label='Time' placeholder='Select Time' type='time' />
                     </div>
                     <div className='mb-5'>
-                        <label htmlFor="" className='font-bold font-dmsans text-[0.8rem]' >Additional Information</label>
+                        <label htmlFor="" className='font-semibold font-dmsans text-[0.8rem]' >Additional Information</label>
 
                         <textarea name="" id="" rows={5} placeholder='Type your message ' className='px-2 py-1 w-full bg-[#F6F6F6] text-[0.8rem]'></textarea>
                     </div>

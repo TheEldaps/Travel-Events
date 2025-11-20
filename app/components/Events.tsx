@@ -12,12 +12,12 @@ export default function Events({ image, title, description, }: { image: StaticIm
 
             <div>
                 <section className='mb-5'>
-                    <h3 className='mt-2.5 font-bold '>{title}</h3>
-                    <p className='text-[0.6rem] font-nunitosans text-justify'>{description}</p>
+                    <h3 className='mt-2.5 font-bold text-[1rem] md:text-[1.2rem] lg:text-[1.5rem]'>{title}</h3>
+                    <p className='text-[0.6rem] md:text-[0.9rem] lg:text-[1.1rem] font-nunitosans text-justify'>{description}</p>
                 </section>
-                <section classame='font-nunito'>
-                    <p className=' text-[0.7rem]'>Deposit</p>
-                    <p className=' text-[0.9rem] font-bold font-[nunito] mb-2.5'>$125 to secure a spot <span className='text-[0.6rem] font-normal'>(Non-Refundable)</span></p>
+                <section classame='font-nunito text-[0.6rem] md:text-[0.9rem] lg:text-[1.1rem]'>
+                    <p className=' '>Deposit</p>
+                    <p className=' font-bold font-[nunito] mb-2.5'>$125 to secure a spot <span className='text-[0.6rem] lg:text-[0.8rem] font-normal'>(Non-Refundable)</span></p>
                 </section>
                 <div className='flex gap-9'>
                     <button className='text-[0.6rem] px-2.5 py-[5px] border border-[#00000052] cursor-pointer hover:bg-[#e4e4e455] hover:text-[#000000b0] rounded-sm shadow-md'> Get Tickets </ button>

@@ -17,7 +17,7 @@ export default function Testimonials({
 }) {
   return (
     <div
-      className={`border border-[#B0B0B0] rounded-[5%] p-2 mb-10 mx-auto max-w-[250px] transform sm:${rotate} ${origin}`}
+      className={`border border-[#B0B0B0] rounded-[5%] p-2 mb-10 mx-auto max-w-[250px] transform md:${rotate} ${origin}`}
     >
       <Image
         src={image}
@@ -26,8 +26,8 @@ export default function Testimonials({
         alt="Image fo the commenter"
         className="block  h-auto mx-auto mb-2 sm:min-w-[200px] w-full"
       />
-      <p className="text-center mb-2 text-[0.8rem] leading-5">{comment}</p>
-      <h4 className="text-center font-bold">- {name}</h4>
+      <p className="text-center mb-2 text-[0.8rem] md:text-[1rem] leading-5 md:leading-6">{comment}</p>
+      <h4 className="text-center font-bold md:text-[1.2rem]">- {name}</h4>
     </div>
   );
 }

@@ -8,10 +8,10 @@ import Button from "./Button";
 
 export default function TestimonialsSection() {
   return (
-    <section className="px-[10%] my-20">
+    <section className="px-[10%] my-20 lg:mt-80">
       <Heading heading1='Hear from Our' heading2='Happy Travelers' />
 
-      <div className=" sm:flex gap-10 ">
+      <div className=" md:flex gap-10 mb-10 ">
         <Testimonials
           rotate="rotate-[-5deg]"
           image={CommentersImage1}
@@ -34,7 +34,7 @@ export default function TestimonialsSection() {
           origin="origin-top-left"
         />
       </div>
-      <div><Button title='Book a Vacation' /></div>
+      <div><Button text='md:text-[2rem]' title='Book a Vacation' /></div>
     </section>
   );
 }
