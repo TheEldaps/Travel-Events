@@ -2,6 +2,19 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { DM_Sans } from "next/font/google";
 import { DM_Serif_Display } from "next/font/google";
+import { Nunito_Sans } from "next/font/google";
+import { Nunito } from "next/font/google";
+
+const nunito = Nunito({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-nunito"
+});
+
+export const nunitosans = Nunito_Sans({
+  subsets: ["latin"],
+  variable: "--font-nunitosans", 
+});
 
 const dmSerif = DM_Serif_Display({
   weight: "400",
@@ -25,7 +38,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${dmSans.variable} ${dmSerif.variable}`}>
+    <html lang="en" className={`${dmSans.variable} ${dmSerif.variable} ${nunitosans.variable}`}>
       <body className="antialiased">{children}</body>
     </html>
   );

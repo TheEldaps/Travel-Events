@@ -5,8 +5,8 @@ export default function ServiceItems({ image, title, description }: { image: Sta
         <div className='mb-15 md:relative'>
             <Image src={image} width='1000' height='400' alt='Service section image' className='w-full h-auto' />
 
-            <div className='mt-5 max-w-[400px] md:absolute bottom-[4%] md:rounded-xl left-[2%] md:text-white md:w-[50%] md:p-5 md:backdrop-blur-md md:bg-[#ffffff37]'>
-                <h3 className='mb-2 font-semibold font-[dmsans] md:text-[1.5rem]'>{title}</h3>
+            <div className='font-dmsans mt-5 max-w-[400px] md:absolute bottom-[4%] md:rounded-xl left-[2%] md:text-white md:w-[50%] md:p-5 md:backdrop-blur-md md:bg-[#ffffff37]'>
+                <h3 className='mb-2 font-semibold md:text-[1.5rem]'>{title}</h3>
                 <p className='text-justify text-[0.9rem] md:text-[0.8rem]'>{description}</p>
             </div>
         </div>
