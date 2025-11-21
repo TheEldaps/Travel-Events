@@ -7,10 +7,10 @@ export default function EventsSection() {
     return (
         <section className='bg-[#FCF7FF] py-10  px-[5%] sm:px-[10%] '>
 
-            <div className='md:flex justify-between '>
+            <div className='flex justify-between '>
                 <h2 className='text-[2rem] lg:text-[3rem] font-semibold mb-4 leading-13'>Upcoming Events <br /><span className='text-[#026EFF] font-[dmserif] italic'>You Cannot Miss! </span></h2>
 
-                <p className='flex sm:flex-col text-[0.8rem] mb-[30px] sm:justify-end md:text-[1rem] gap-2 max-w-[40%]'>See what's coming soon and find the perfect experience.
+                <p className='flex flex-col text-[0.8rem] mb-[30px] justify-end md:text-[1rem] gap-2 max-w-[40%]'>See what's coming soon and find the perfect experience.
                     <Link href='#services' className='underline hover:text-[#3636367b]  block'>  See All Services &rarr;</Link>
                 </p>
             </div>
