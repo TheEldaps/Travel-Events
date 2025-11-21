@@ -14,7 +14,7 @@ export default function Nav() {
   }
 
   return (
-    <header className={`px-[5%] w-full bg-white pt-2.5 z-1 sticky top-0 border-b `}>
+    <header className={`px-[5%] sm:px-[10%] w-full bg-white pt-2.5 z-1 sticky top-0  `}>
       <nav className="flex justify-between items-center  mb-2.5 ">
         <Image
           src={Logo}

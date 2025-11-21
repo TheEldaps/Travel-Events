@@ -3,7 +3,7 @@ import Heading from "./Heading"
 
 export default function RequestQuoteSection() {
     return (
-        <section id='request-quote' className='px-[5%] md:px-[10%] pt-15 mb-10   '>
+        <section id='request-quote' className=' px-[5%] sm:px-[10%]  pt-15 mb-10   '>
             <section className='mx-auto max-w-[1000px] md:bg-[url("/RequestQuoteBgImage.png")] bg-no-repeat bg-[position:center_bottom] 
  bg-contain pb-10'>
                 <div className=' text-center text-[1rem] mb-5'>

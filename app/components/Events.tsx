@@ -15,7 +15,7 @@ export default function Events({ image, title, description, }: { image: StaticIm
                     <h3 className='mt-2.5 font-bold text-[1rem] md:text-[1.2rem] lg:text-[1.5rem]'>{title}</h3>
                     <p className='text-[0.6rem] md:text-[0.9rem] lg:text-[1.1rem] font-nunitosans text-justify'>{description}</p>
                 </section>
-                <section classame='font-nunito text-[0.6rem] md:text-[0.9rem] lg:text-[1.1rem]'>
+                <section className='font-nunito text-[0.6rem] md:text-[0.9rem] lg:text-[1.1rem]'>
                     <p className=' '>Deposit</p>
                     <p className=' font-bold font-[nunito] mb-2.5'>$125 to secure a spot <span className='text-[0.6rem] lg:text-[0.8rem] font-normal'>(Non-Refundable)</span></p>
                 </section>
