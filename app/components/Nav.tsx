@@ -45,7 +45,7 @@ export default function Nav() {
           <NavLink title="Services" href="#services" />
           <NavLink title="Who we are" href="#about-us" />
           <NavLink title="Contact us" href="#contact-us" />
-          <Button title="Get Started" />
+          <Button title="Get Started" text='md:text-[1.1rem] lg:text-[1.25rem]' />
         </ul>
       </nav>
 
