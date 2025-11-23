@@ -13,7 +13,7 @@ export default function AboutSection() {
 
       <section className=' flex flex-col md:flex-row w-full justify-center md:items-center md:max-w-[500px]'>
         <div className='flex mb-4 grow relative  max-w-[300px] items-center mx-auto md:w-[80%] md:max-w-[300px] md:h-full'>
-          <Image src={AboutImg1} width='312' height='453' alt='About section Image 1' className='rounded-2xl w-[80%] md:w-full md:h-[80%] md:max-w-[300px] h-auto' />
+          <Image src={AboutImg1} width='312' height='453' alt='About section Image 1' className='rounded-2xl w-[80%] md:w-full md:h-[82%] md:max-w-[300px] h-auto' />
           <Image src={AboutImg2} width='150' height='189' alt='About section Image 1' className='rounded-2xl absolute top-1/4 md:top-1/4 right-[-15] md:right-[-40] w-[40%] max-w-[150px] h-auto' />
         </div>
 
@@ -22,7 +22,7 @@ export default function AboutSection() {
             <Items title='500+' description='Happy Travellers' />
             <Items title='15+' description='Years of Experience' />
           </div>
-          <h3 className='text-[1.3rem] lg:text-[2rem] font-dmsans text-[#646464] font-bold  text-end w-[33%] md:w-full'>Creating <br />Memories</h3>
+          <h3 className='text-[1.3rem] lg:text-[2rem] font-dmsans text-[#646464] font-bold  text-end w-[33%] md:w-full '>Creating <br />Memories</h3>
         </ul>
       </section>
 

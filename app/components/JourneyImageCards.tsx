@@ -3,19 +3,19 @@ import { StaticImageData } from "next/image";
 
 export default function JourneyImageCards({
   image,
-  imageheight,
+
 }: {
   image: StaticImageData;
-  imageheight: string;
+
 }) {
   return (
-    <div className={`${imageheight}`}>
+    <div>
       <Image
         src={image}
         width="200"
         height="400"
         alt="An Image showing the our journey through memories"
-        className="w-full"
+        className='w-[25vw]'
       />
     </div>
   );

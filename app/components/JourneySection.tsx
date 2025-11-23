@@ -12,16 +12,16 @@ export default function JourneySection() {
     <section className=" px-[5%] sm:px-[10%] bg-[#F2F7FF] pt-[30px] pb-5">
       <Heading heading1='Our Journey Through' heading2='images' wrap={true} />
 
-      <section >
-        <div className="flex gap-[5%] mb-5 justify-center">
-          <JourneyImageCards image={JourneyImage1} imageheight="h-100%" />
-          <JourneyImageCards image={JourneyImage2} imageheight="h-75%" />
-          <JourneyImageCards image={JourneyImage3} imageheight="h-50%" />
+      <section className=' mt-20'>
+        <div className="flex gap-[5%] lg:gap-[3%] mb-10 justify-center">
+          <JourneyImageCards image={JourneyImage1} />
+          <JourneyImageCards image={JourneyImage2} />
+          <JourneyImageCards image={JourneyImage3} />
         </div>
-        <div className="flex gap-[5%] justify-center">
-          <JourneyImageCards image={JourneyImage4} imageheight="h-50%" />
-          <JourneyImageCards image={JourneyImage5} imageheight="h-75%" />
-          <JourneyImageCards image={JourneyImage6} imageheight="h-100%" />
+        <div className="flex gap-[5%] lg:gap-[3%] justify-center">
+          <JourneyImageCards image={JourneyImage4} />
+          <JourneyImageCards image={JourneyImage5} />
+          <JourneyImageCards image={JourneyImage6} />
         </div>
       </section>
     </section>
