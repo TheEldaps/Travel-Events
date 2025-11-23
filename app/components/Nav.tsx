@@ -14,8 +14,8 @@ export default function Nav() {
   }
 
   return (
-    <header className={`px-[5%] sm:px-[10%] w-full bg-white pt-2.5 z-1 sticky top-0  `}>
-      <nav className="flex justify-between items-center  mb-2.5 ">
+    <header className={`px-[5%] sm:px-[10%] w-full bg-white pt-2.5 z-1 sticky top-0 border`}>
+      <nav className="flex justify-between items-center  mb-2.5">
         <Image
           src={Logo}
           width="50"
@@ -45,7 +45,7 @@ export default function Nav() {
           <NavLink title="Services" href="#services" />
           <NavLink title="Who we are" href="#about-us" />
           <NavLink title="Contact us" href="#contact-us" />
-          <Button title="Get Started" text='md:text-[1.1rem] lg:text-[1.25rem]' />
+          <Button title="Get Started" text='md:text-[1rem] sm:text-[0.7rem] lg:text-[1.25rem]' />
         </ul>
       </nav>
 

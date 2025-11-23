@@ -9,7 +9,7 @@ export default function HeroSection() {
         Where Travel, Fun and Easy Planning Comes{" "}
         <br className="inline sm:hidden lg:inline" /> together
       </h1>
-      <Button title="Book a Vacation" text="text-[1rem] md:text-[2rem]" />
+      <Button title="Book a Vacation" text="text-[1rem] md:text-[1.5rem]" />
       <Image
         src={HeroImage}
         width="1000"
