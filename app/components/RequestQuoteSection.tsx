@@ -6,7 +6,7 @@ export default function RequestQuoteSection() {
         <section id='request-quote' className=' px-[5%] sm:px-[10%]  pt-15 mb-10   '>
             <section className='mx-auto max-w-[1000px] md:bg-[url("/RequestQuoteBgImage.png")] bg-no-repeat bg-[position:center_bottom] 
  bg-contain pb-10'>
-                <div className=' text-center text-[1rem] mb-5'>
+                <div className=' text-center text-[1rem] mb-10'>
                     <Heading heading1='Request a ' heading2='Quote.' wrap={false
                     } />
                     <p>Please provide the following information. </p>

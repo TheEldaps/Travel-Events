@@ -5,20 +5,20 @@ import Items from '../components/Items'
 
 export default function AboutSection() {
   return (
-    <section id='who-we-are' className='md:flex px-[5%] sm:px-[10%] pt-20 gap-4 mb-20 border'>
-      <section className='md:w-[50%]'>
+    <section id='who-we-are' className='md:flex px-[5%] sm:px-[10%] pt-20 gap-4 md:gap-5 lg:gap-10 mb-20'>
+      <section className='md:w-[70%]'>
         <h2 className='font-bold text-[2rem] lg:text-[60px] font-dmsans mb-5'>About Us</h2>
-        <p className='mb-6 text-justify sm:text-[1.1rem] md:text-[1rem]'>Travel & Events Made Easy by Nicky is a full-service travel and event planning company specializing in unforgettable group vacations, seamless destination experiences, and beautifully coordinated events. Founded and led by Nickia Fulton, a passionate travel expert and event coordinator, the company focuses on creating stress-free, personalized experiences that bring people together through travel, celebration, and connection. With 15+ years of travel and event planning experience 20 + group trips and 100+ special events including weddings, anniversaries, We are Known for blending luxury, fun, affordability, and connection in every experience</p>
+        <p className='mb-6 text-justify sm:text-[1.1rem] md:text-[1rem] lg:text-[1.25rem]'>Travel & Events Made Easy by Nicky is a full-service travel and event planning company specializing in unforgettable group vacations, seamless destination experiences, and beautifully coordinated events. Founded and led by Nickia Fulton, a passionate travel expert and event coordinator, the company focuses on creating stress-free, personalized experiences that bring people together through travel, celebration, and connection. With 15+ years of travel and event planning experience 20 + group trips and 100+ special events including weddings, anniversaries, We are Known for blending luxury, fun, affordability, and connection in every experience</p>
       </section>
 
-      <section className=' flex flex-col md:flex-row w-full justify-center md:items-center grow  border border-[red]'>
-        <div className='flex mb-4 grow relative  max-w-[300px] items-center mx-auto md:w-[80%] border md:max-w-full md:h-full'>
-          <Image src={AboutImg1} width='312' height='453' alt='About section Image 1' className='rounded-2xl w-[80%] md:w-full md:h-[80%] h-auto' />
+      <section className=' flex flex-col md:flex-row w-full justify-center md:items-center md:max-w-[500px]'>
+        <div className='flex mb-4 grow relative  max-w-[300px] items-center mx-auto md:w-[80%] md:max-w-[300px] md:h-full'>
+          <Image src={AboutImg1} width='312' height='453' alt='About section Image 1' className='rounded-2xl w-[80%] md:w-full md:h-[80%] md:max-w-[300px] h-auto' />
           <Image src={AboutImg2} width='150' height='189' alt='About section Image 1' className='rounded-2xl absolute top-1/4 md:top-1/4 right-[-15] md:right-[-40] w-[40%] max-w-[150px] h-auto' />
         </div>
 
-        <ul className='px-[4%] md:px-0 flex md:flex-col justify-between py-3 gap-4  w-full mx-auto border md:max-w-[30%] md:justify-between md:h-[80%]'>
-          <div className=' grow md:grow-0 flex md:flex-col  justify-between md:pt-[20%] sm:flex-row gap-4 lg:gap-0 lg:flex-col md:h-[60%] pr-[2%] border'>
+        <ul className='px-[4%] md:px-0 flex md:flex-col justify-between py-3 md:py-0  gap-4  w-full mx-auto md:max-w-[30%] md:justify-between md:h-[80%]'>
+          <div className=' grow md:grow-0 flex md:flex-col  justify-between md:pt-[20%] lg:pt-0 sm:flex-row gap-4 lg:gap-0 lg:flex-col md:h-[65%] pr-[2%]'>
             <Items title='500+' description='Happy Travellers' />
             <Items title='15+' description='Years of Experience' />
           </div>
