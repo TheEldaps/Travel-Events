@@ -11,8 +11,8 @@ export default function ServiceSection() {
         <section id='services' className=' px-[5%] sm:px-[10%] pt-10 lg:pt-20 '>
             <div className='flex justify-between gap-[5%]  mb-[30px]'>
                 <div className='max-w-[50%] lg:max-w-[70%] grow '>
-                    <h2 className='text-[2rem] lg:text-[3rem] font-semibold'>Our <span className='text-[#026EFF] font-[dmserif] italic'>Services</span></h2>
-                    <p className='text-[0.8rem] md:text-[1rem] lg:text-[1.1rem] text-[#7B7B7B] font-dmsans '>Where will your next adventure take you? Check out these top destinations loved by travelers around the world.</p>
+                    <h2 className='text-[2rem] lg:text-[3rem] font-semibold'>Our <span className='text-[#026EFF] font-[dmserif] font-normal italic'>Services</span></h2>
+                    <p className='font-[dmsans] text-[0.8rem] md:text-[1rem] lg:text-[1.1rem] text-[#7B7B7B] font-dmsans '>Where will your next adventure take you? Check out these top destinations loved by travelers around the world.</p>
                 </div>
                 <div className='w-[28%] max-w-[200px]'>
                     <EllipsePictureFrame />

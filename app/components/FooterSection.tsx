@@ -6,7 +6,7 @@ import FacebookLogo from '../../public/FacebookLogo.png'
 
 export default function FooterSection() {
     return (
-        <section id='contact-us' className='bg-[#151515] text-white  px-[5%] sm:px-[10%] py-10'>
+        <section id='contact-us' className='font-[dmsans] bg-[#151515] text-white  px-[5%] sm:px-[10%] py-10'>
             <section className='flex justify-between mb-2'>
                 <div className='w-[30%] max-w-[200px]'>
                     <Link href='#home'>
@@ -22,9 +22,9 @@ export default function FooterSection() {
                         <li>TMEbyNicky@gmail.com</li>
                     </ul>
                     <div className='flex gap-5 mt-8'>
-                        <Link href='www.facebook.com'><Image src={FacebookLogo} width='200' height='200' alt='facebook logo' className='w-[30px] h-auto' /></Link>
+                        <Link href='www.facebook.com'><Image src={FacebookLogo} width='200' height='200' alt='facebook logo' className='w-[25px] h-auto' /></Link>
                         <Link href='www.instagram.com'><Image src={InstagramLogo} width='200' height='200' alt='Instagram 
-                    logo' className='w-[30px] h-auto' /></Link>
+                    logo' className='w-[25px] h-auto' /></Link>
                     </div>
                 </div>
             </section>

@@ -6,13 +6,13 @@ export default function RequestQuoteSection() {
         <section id='request-quote' className=' px-[5%] sm:px-[10%]  pt-15 mb-10   '>
             <section className='mx-auto max-w-[1000px] md:bg-[url("/RequestQuoteBgImage.png")] bg-no-repeat bg-[position:center_bottom] 
  bg-contain pb-10'>
-                <div className=' text-center text-[1rem] mb-10'>
+                <div className=' text-center text-[1rem] mb-8'>
                     <Heading heading1='Request a ' heading2='Quote.' wrap={false
                     } />
-                    <p>Please provide the following information. </p>
+                    <p >Please provide the following information. </p>
                 </div>
 
-                <form action="" className='p-[5%] mx-auto shadow-2xl bg-[white]  w-full md:w-[60%] rounded-xl'>
+                <form action="" className='p-[5%] mx-auto shadow-2xl  bg-[white]  w-full md:w-[60%] rounded-xl'>
                     <div className='sm:flex  gap-2'>
                         <FormItems label='Full Name' placeholder='Your Full Name' />
 
