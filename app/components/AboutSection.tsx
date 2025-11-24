@@ -5,7 +5,7 @@ import Items from '../components/Items'
 
 export default function AboutSection() {
   return (
-    <section id='who-we-are' className='md:flex px-[5%] sm:px-[10%] pt-10 gap-4 md:gap-5 lg:gap-10 mb-20 '>
+    <section id='who-we-are' className='md:flex px-[5%] sm:px-[10%] lg:pt-10 gap-4 md:gap-5 lg:gap-10 mb-20'>
       <section className='md:w-[70%]'>
         <h2 className='font-bold text-[2rem] lg:text-[60px] font-dmsans mb-5'>About Us</h2>
         <p className='mb-6 text-justify sm:text-[1.1rem] md:text-[1rem] lg:text-[1.25rem]'>Travel & Events Made Easy by Nicky is a full-service travel and event planning company specializing in unforgettable group vacations, seamless destination experiences, and beautifully coordinated events. Founded and led by Nickia Fulton, a passionate travel expert and event coordinator, the company focuses on creating stress-free, personalized experiences that bring people together through travel, celebration, and connection. With 15+ years of travel and event planning experience 20 + group trips and 100+ special events including weddings, anniversaries, We are Known for blending luxury, fun, affordability, and connection in every experience</p>

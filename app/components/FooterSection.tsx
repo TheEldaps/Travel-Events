@@ -11,7 +11,7 @@ export default function FooterSection() {
                 <div className='w-[30%] max-w-[200px]'>
                     <Link href='#home'>
                         <Image src={Logo} width='300' height='300' alt='Website logo' className='w-full h-auto' />
-                        <p className='text-[0.5rem] text-center '>Where travel, fun and easy planning comes together</p>
+                        <p className='text-[0.5rem] lg:text-[0.7rem] md:text-[0.6rem] text-center '>Where travel, fun and easy planning comes together</p>
                     </Link>
                 </div>
                 <div className='text-[0.8rem]'>
