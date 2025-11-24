@@ -9,7 +9,7 @@ export default function RequestQuoteSection() {
                 <div className=' text-center text-[1rem] mb-8'>
                     <Heading heading1='Request a ' heading2='Quote.' wrap={false
                     } />
-                    <p >Please provide the following information. </p>
+                    <p className='font-[librefranklin]'>Please provide the following information. </p>
                 </div>
 
                 <form action="" className='p-[5%] mx-auto shadow-2xl  bg-[white]  w-full md:w-[60%] rounded-xl'>

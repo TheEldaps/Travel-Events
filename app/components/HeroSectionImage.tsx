@@ -10,7 +10,7 @@ export default function ExpandableImage({ images }: { images: string[] }) {
     if (!open) {
         return (
             <div className="relative w-full h-auto  mt-15">
-                <div className='w-[28%] min-h-[30px] max-w-[200px] ml-[80%] '>
+                <div className='w-[25%] min-h-[30px] max-w-[200px] ml-[78%] pr-[5px]'>
                     <EllipsePictureFrame />
                 </div>
 

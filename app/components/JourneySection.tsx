@@ -12,7 +12,7 @@ export default function JourneySection() {
     <section className=" px-[5%] sm:px-[10%] bg-[#F2F7FF] pt-[30px] pb-5">
       <Heading heading1='Our Journey Through' heading2='images' wrap={true} />
 
-      <section className=' mt-20'>
+      <section className=' mt-10 lg:mt-20'>
         <div className="flex gap-[5%] lg:gap-[3%] mb-5 justify-center">
           <JourneyImageCards image={JourneyImage1} />
           <JourneyImageCards image={JourneyImage2} />
