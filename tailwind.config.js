@@ -14,7 +14,7 @@ module.exports = {
         nunito: ["var(--font-nunito)", "sans-serif"],
       },
     },
-    safelist: ["sm:rotate-[-5deg]", "sm:rotate-[5deg]", "sm:rotate-[0deg]"],
+    safelist: ["md:rotate-[-5deg]", "md:rotate-[5deg]", "md:rotate-[0deg]"],
     plugins: [],
   }
 }

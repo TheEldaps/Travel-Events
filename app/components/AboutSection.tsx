@@ -22,7 +22,7 @@ export default function AboutSection() {
             <Items title='500+' description='Happy Travellers' />
             <Items title='15+' description='Years of Experience' />
           </div>
-          <h3 className='text-[1.3rem] lg:text-[2rem] font-dmsans text-[#646464] font-bold  text-end w-[33%] md:w-full '>Creating <br />Memories</h3>
+          <h3 className=' flex items-center md:block text-[1.3rem] lg:text-[2rem] font-dmsans text-[#646464] font-bold  justify-end w-[33%] md:w-full'>Creating <br />Memories</h3>
         </ul>
       </section>
 

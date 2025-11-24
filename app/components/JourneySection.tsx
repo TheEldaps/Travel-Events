@@ -13,7 +13,7 @@ export default function JourneySection() {
       <Heading heading1='Our Journey Through' heading2='images' wrap={true} />
 
       <section className=' mt-20'>
-        <div className="flex gap-[5%] lg:gap-[3%] mb-10 justify-center">
+        <div className="flex gap-[5%] lg:gap-[3%] mb-5 justify-center">
           <JourneyImageCards image={JourneyImage1} />
           <JourneyImageCards image={JourneyImage2} />
           <JourneyImageCards image={JourneyImage3} />
