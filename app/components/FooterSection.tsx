@@ -8,7 +8,7 @@ export default function FooterSection() {
     return (
         <section id='contact-us' className='bg-[#151515] text-white  px-[5%] sm:px-[10%] py-10'>
             <section className='flex justify-between mb-10'>
-                <div className='w-[30%] max-w-[200px] border'>
+                <div className='w-[30%] max-w-[200px]'>
                     <Link href='#home'>
                         <Image src={Logo} width='300' height='300' alt='Website logo' className='w-full h-auto' />
                         <p className='text-[0.5rem] text-center '>Where travel, fun and easy planning comes together</p>
