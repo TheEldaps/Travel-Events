@@ -18,7 +18,7 @@ const dmSans = localFont({
 
 const dmSerif = localFont({
   src: [
-    { path: "../public/fonts/DMSerifDisplay-Regular.woff2" }],
+    { path: "../public/fonts/DMSerifText-Regular.woff2" }],
   variable: "--font-dm-serif"
 });
 
@@ -37,38 +37,16 @@ const nunitoSans = localFont({
 const libreFranklin = localFont({
   src: [
     { path: "../public/fonts/LibreFranklin-VariableFont_wght.woff2" }],
-  variable: "--font-dm-serif"
+  variable: "--font-librefranklin"
 });
 
 const robotoFlex = localFont({
   src: [
     { path: "../public/fonts/RobotoFlex-VariableFont_GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght.woff2" }],
-  variable: "--font-dm-serif"
+  variable: "--font-robotoflex"
 });
 
 
-
-// const nunito = Nunito({
-//   subsets: ["latin"],
-//   weight: ["400", "700"],
-//   variable: "--font-nunito"
-// });
-
-// export const nunitosans = Nunito_Sans({
-//   subsets: ["latin"],
-//   variable: "--font-nunitosans",
-// });
-
-// const dmSerif = DM_Serif_Display({
-//   weight: "400",
-//   subsets: ["latin"],
-//   variable: "--font-dm-serif"
-// });
-
-// const dmSans = DM_Sans({
-//   subsets: ["latin"],
-//   variable: "--font-dm-sans",
-// });
 
 export const metadata: Metadata = {
   title: "Travel & Events Made Easy",
@@ -81,7 +59,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${dmSans.variable} ${dmSerif.variable} ${nunitoSans.variable} ${nunito.variable} `}>
+    <html lang="en" className={`${dmSans.variable} ${libreFranklin.variable} ${robotoFlex.variable}  ${dmSerif.variable} ${nunitoSans.variable} ${nunito.variable} `}>
       <body className="antialiased">{children}</body>
     </html>
   );

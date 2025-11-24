@@ -1,6 +1,5 @@
 import Button from "../components/Button";
 import Image from "next/image";
-import HeroImage from "../../public/HeroImage.png";
 import HeroSectionImage from '../components/HeroSectionImage'
 
 export default function HeroSection() {
@@ -13,13 +12,7 @@ export default function HeroSection() {
       <Button title="Book a Vacation" text="text-[1rem] md:text-[1.5rem]" />
 
       <HeroSectionImage images={['/HeroImage.png', '/ServiceImage1.png', '/serviceImage2.png']} />
-      {/* <Image
-        src={HeroImage}
-        width="1000"
-        height="500"
-        alt="hero section image"
-        className="mt-10 rounded-b-2xl block mx-auto w-full h-auto"
-      /> */}
+
       <p className='flex font-[dmsans] justify-between pt-5 text-[#026EFF]'><span>Vacation/Events</span><span>Made</span><span>Easy</span></p>
     </section>
   );
