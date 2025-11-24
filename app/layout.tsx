@@ -13,7 +13,7 @@ const nunito = Nunito({
 
 export const nunitosans = Nunito_Sans({
   subsets: ["latin"],
-  variable: "--font-nunitosans", 
+  variable: "--font-nunitosans",
 });
 
 const dmSerif = DM_Serif_Display({
@@ -38,7 +38,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${dmSans.variable} ${dmSerif.variable} ${nunitosans.variable}`}>
+    <html lang="en" className={`${dmSans.variable} ${dmSerif.variable} ${nunitosans.variable} ${nunito.variable} `}>
       <body className="antialiased">{children}</body>
     </html>
   );
