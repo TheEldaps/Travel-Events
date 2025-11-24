@@ -10,7 +10,7 @@ module.exports = {
       fontFamily: {
         dmsans: ["var(--font-dm-sans)", "Helvetica"],
         dmserif: ["var(--font-dm-serif)", "Roboto"],
-        nunitosans: ["var(--font-nunito)", "sans-serif"],
+        nunitosans: ["var(--font-nunitosans)", "sans-serif"],
         nunito: ["var(--font-nunito)", "sans-serif"],
       },
     },

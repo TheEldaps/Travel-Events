@@ -7,11 +7,11 @@ import FacebookLogo from '../../public/FacebookLogo.png'
 export default function FooterSection() {
     return (
         <section id='contact-us' className='bg-[#151515] text-white  px-[5%] sm:px-[10%] py-10'>
-            <section className='flex justify-between mb-10'>
+            <section className='flex justify-between mb-2'>
                 <div className='w-[30%] max-w-[200px]'>
                     <Link href='#home'>
                         <Image src={Logo} width='300' height='300' alt='Website logo' className='w-full h-auto' />
-                        <p className='text-[0.5rem] lg:text-[0.7rem] md:text-[0.6rem] text-center '>Where travel, fun and easy planning comes together</p>
+                        <p className='text-[0.5rem] lg:text-[0.7rem] md:text-[0.6rem] text-center text-[#E1E1E1]'>Where travel, fun and easy planning comes together</p>
                     </Link>
                 </div>
                 <div className='text-[0.8rem]'>

@@ -8,7 +8,7 @@ import ServiceImage4 from '../../public/ServiceImage4.png'
 
 export default function ServiceSection() {
     return (
-        <section id='services' className=' px-[5%] sm:px-[10%] pt-20'>
+        <section id='services' className=' px-[5%] sm:px-[10%] pt-10 lg:pt-20 '>
             <div className='flex justify-between gap-[5%]  mb-[30px]'>
                 <div className='max-w-[50%] lg:max-w-[70%] grow '>
                     <h2 className='text-[2rem] lg:text-[3rem] font-semibold'>Our <span className='text-[#026EFF] font-[dmserif] italic'>Services</span></h2>
