@@ -10,7 +10,7 @@ export default function Button({
   return (
     <Link href='#request-quote'>
       <button
-        className={`block px-5 py-3 mx-auto bg-[#026EFF] hover:bg-[#0270ffcc] ${text} text-nowrap text-white hover:text-[#ffffffbc] font-semibold cursor-pointer font-sans rounded-xl`}
+        className={`block px-5 py-3 mx-auto bg-[#026EFF] hover:bg-[#0270ffcc] ${text} text-nowrap text-white hover:text-[#ffffffbc] font-medium cursor-pointer font-[dmsans] rounded-xl`}
       >
         {title}
       </button></Link>

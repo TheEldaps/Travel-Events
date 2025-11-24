@@ -1,31 +1,62 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { DM_Sans } from "next/font/google";
-import { DM_Serif_Display } from "next/font/google";
-import { Nunito_Sans } from "next/font/google";
-import { Nunito } from "next/font/google";
 
-const nunito = Nunito({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-  variable: "--font-nunito"
-});
+// import { DM_Sans } from "next/font/google";
+// import { DM_Serif_Display } from "next/font/google";
+// import { Nunito_Sans } from "next/font/google";
+// import { Nunito } from "next/font/google";
+import localFont from "next/font/local"
 
-export const nunitosans = Nunito_Sans({
-  subsets: ["latin"],
-  variable: "--font-nunitosans",
-});
 
-const dmSerif = DM_Serif_Display({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-dm-serif"
-});
-
-const dmSans = DM_Sans({
-  subsets: ["latin"],
+const dmSans = localFont({
+  src: [
+    { path: "../public/fonts/DMSans-VariableFont_opsz,wght.woff2", },
+  ],
   variable: "--font-dm-sans",
 });
+
+
+const dmSerif = localFont({
+  src: [
+    { path: "../public/fonts/DMSerifText-Regular.woff2" }],
+  variable: "--font-dm-serif"
+})
+
+const nunito = localFont({
+  src: [
+    { path: "../public/fonts/Nunito-VariableFont_wght.woff2" }],
+  variable: "--font-nunito"
+})
+
+const nunitoSans = localFont({
+  src: [
+    { path: "../public/fonts/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.woff2" }],
+  variable: "--font-nunitosans"
+})
+
+
+
+// const nunito = Nunito({
+//   subsets: ["latin"],
+//   weight: ["400", "700"],
+//   variable: "--font-nunito"
+// });
+
+// export const nunitosans = Nunito_Sans({
+//   subsets: ["latin"],
+//   variable: "--font-nunitosans",
+// });
+
+// const dmSerif = DM_Serif_Display({
+//   weight: "400",
+//   subsets: ["latin"],
+//   variable: "--font-dm-serif"
+// });
+
+// const dmSans = DM_Sans({
+//   subsets: ["latin"],
+//   variable: "--font-dm-sans",
+// });
 
 export const metadata: Metadata = {
   title: "Travel & Events Made Easy",
@@ -38,7 +69,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${dmSans.variable} ${dmSerif.variable} ${nunitosans.variable} ${nunito.variable} `}>
+    <html lang="en" className={`${dmSans.variable} ${dmSerif.variable} ${nunitoSans.variable} ${nunito.variable} `}>
       <body className="antialiased">{children}</body>
     </html>
   );
