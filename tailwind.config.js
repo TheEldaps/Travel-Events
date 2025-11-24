@@ -12,6 +12,8 @@ module.exports = {
         dmserif: ["var(--font-dm-serif)", "Roboto"],
         nunitosans: ["var(--font-nunitosans)", "sans-serif"],
         nunito: ["var(--font-nunito)", "sans-serif"],
+        robotoflex: ["--font-robotoflex", "sans-serif"],
+        librefranklin: ["--font-librefranklin", "sans-serif"],
       },
     },
     safelist: ["md:rotate-[-5deg]", "md:rotate-[5deg]", "md:rotate-[0deg]"],

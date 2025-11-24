@@ -27,7 +27,7 @@ export default function Testimonials({
         className="block  h-auto mx-auto mb-2 sm:min-w-[200px]  w-full"
       />
       <p className="text-center mb-2 text-[0.8rem] md:text-[1rem] leading-5 md:leading-6">{comment}</p>
-      <h4 className="text-center font-bold md:text-[1.2rem]">&ld; {name}</h4>
+      <h4 className="text-center font-bold md:text-[1.2rem]">&ndash; {name}</h4>
     </div>
   );
 }

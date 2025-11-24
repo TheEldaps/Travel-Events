@@ -18,21 +18,33 @@ const dmSans = localFont({
 
 const dmSerif = localFont({
   src: [
-    { path: "../public/fonts/DMSerifText-Regular.woff2" }],
+    { path: "../public/fonts/DMSerifDisplay-Regular.woff2" }],
   variable: "--font-dm-serif"
-})
+});
 
 const nunito = localFont({
   src: [
     { path: "../public/fonts/Nunito-VariableFont_wght.woff2" }],
   variable: "--font-nunito"
-})
+});
 
 const nunitoSans = localFont({
   src: [
     { path: "../public/fonts/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.woff2" }],
   variable: "--font-nunitosans"
-})
+});
+
+const libreFranklin = localFont({
+  src: [
+    { path: "../public/fonts/LibreFranklin-VariableFont_wght.woff2" }],
+  variable: "--font-dm-serif"
+});
+
+const robotoFlex = localFont({
+  src: [
+    { path: "../public/fonts/RobotoFlex-VariableFont_GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght.woff2" }],
+  variable: "--font-dm-serif"
+});
 
 
 
