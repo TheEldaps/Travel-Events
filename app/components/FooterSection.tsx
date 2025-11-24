@@ -8,10 +8,10 @@ export default function FooterSection() {
     return (
         <section id='contact-us' className='bg-[#151515] text-white  px-[5%] sm:px-[10%] py-10'>
             <section className='flex justify-between mb-10'>
-                <div className='w-[20%] max-w-[100px]'>
+                <div className='w-[30%] max-w-[200px] border'>
                     <Link href='#home'>
-                        <Image src={Logo} width='300' height='300' alt='Website logo' className=' max-w-[100px] h-auto' />
-                        <p className='text-[0.5rem]  text-center '>Where travel, fun and easy planning comes together</p>
+                        <Image src={Logo} width='300' height='300' alt='Website logo' className='w-full h-auto' />
+                        <p className='text-[0.5rem] text-center '>Where travel, fun and easy planning comes together</p>
                     </Link>
                 </div>
                 <div className='text-[0.8rem]'>
@@ -21,7 +21,7 @@ export default function FooterSection() {
                         <li>(443) 406-8048</li>
                         <li>TMEbyNicky@gmail.com</li>
                     </ul>
-                    <div className='flex gap-5'>
+                    <div className='flex gap-5 mt-8'>
                         <Link href='www.facebook.com'><Image src={FacebookLogo} width='200' height='200' alt='facebook logo' className='w-[30px] h-auto' /></Link>
                         <Link href='www.instagram.com'><Image src={InstagramLogo} width='200' height='200' alt='Instagram 
                     logo' className='w-[30px] h-auto' /></Link>
