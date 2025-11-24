@@ -15,6 +15,11 @@ const dmSans = localFont({
   variable: "--font-dm-sans",
 });
 
+const dmSerifItalics = localFont({
+  src: [
+    { path: "../public/fonts/DMSerifText-Italic.woff2" }],
+  variable: "--font-dm-serifItalics"
+})
 
 const dmSerif = localFont({
   src: [
@@ -59,7 +64,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${dmSans.variable} ${libreFranklin.variable} ${robotoFlex.variable}  ${dmSerif.variable} ${nunitoSans.variable} ${nunito.variable} `}>
+    <html lang="en" className={`${dmSans.variable} ${libreFranklin.variable} ${robotoFlex.variable}  ${dmSerif.variable} ${nunitoSans.variable} ${nunito.variable} ${dmSerifItalics.variable} `}>
       <body className="antialiased">{children}</body>
     </html>
   );
