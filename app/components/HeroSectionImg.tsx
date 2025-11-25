@@ -43,27 +43,27 @@ export default function HeroExpandable({ images = [] }: HeroExpandableProps) {
                 {/* Expand button (md and up) */}
                 <button
                     onClick={() => setIsOpen(true)}
-                    className="hidden md:flex items-center justify-center absolute bottom-4 right-4 bg-white px-3 py-3 rounded-full shadow-md hover:bg-white hover:cursor-pointer"
+                    className="flex items-center justify-center absolute bottom-4 right-4 bg-white px-2 py-3 rounded-full shadow-md  hover:cursor-pointer hover:bg-[#ffffffc4] w-[30px] h-[30px] md:w-[50px] md:h-[50px]  "
                     aria-label="Expand images"
                 >
-                    <Image src={Expand} width='50' height='50' alt='hero section image expand button' className='w-[25px] h-[25px]' />
+                    <Image src={Expand} width='50' height='50' alt='hero section image expand button' className='' />
                 </button>
 
                 {/* Small mobile expand button */}
-                <button
+                {/* <button
                     onClick={() => setIsOpen(true)}
                     className="md:hidden absolute bottom-3 right-3 bg-white/95 px-2 py-1 rounded-full shadow-sm text-xs"
                     aria-label="Open gallery"
                 >
-                    ⤢
-                </button>
+                    <Image src={Expand} width='50' height='50' alt='hero section image expand button' className='w-[25px] h-[25px]' />
+                </button> */}
             </div>
 
             {/* FULLSCREEN OVERLAY */}
             {isOpen && (
                 <div
                     ref={overlayRef}
-                    className="fixed inset-0 z-5 flex items-start justify-center p-6 md:p-12"
+                    className="fixed inset-0 z-5 flex items-end md:items-start justify-center p-6 md:p-12"
                     role="dialog"
                     aria-modal="true"
                 >
@@ -92,7 +92,7 @@ export default function HeroExpandable({ images = [] }: HeroExpandableProps) {
                             {images.map((src, i) => (
                                 <div
                                     key={i}
-                                    className="flex-shrink-0 mt-[10%] w-full md:w-[80%] lg:w-[70%] h-[50vh] snap-center rounded-lg overflow-hidden shadow-xl"
+                                    className="flex-shrink-0 mt-[10%] w-full md:w-[80%] lg:w-[70%] h-[50vh] snap-center  overflow-hidden shadow-xl"
                                 >
                                     <img
                                         src={src}
