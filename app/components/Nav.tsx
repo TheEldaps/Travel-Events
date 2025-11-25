@@ -26,14 +26,14 @@ export default function Nav() {
 
         {/* MOBILE VIEW MENU BUTTON */}
         <button onClick={handleClick} className="block sm:hidden">
-          <div className="p-[5px] flex flex-col gap-1 hover:cursor-pointer  hover:bg-[#3232324f] ">
+          <div className="p-[5px] flex flex-col gap-1 text-[1.5rem] hover:cursor-pointer  hover:bg-[#3232324f] ">
             {navState ? (
-              "x"
+              '✕'
             ) : (
               <>
-                <span className="block w-5 h-1  bg-black"></span>
-                <span className="block w-5 h-1  bg-black"></span>
-                <span className="block w-5 h-1  bg-black"></span>
+                <span className="block w-6 h-1  bg-black"></span>
+                <span className="block w-6 h-1  bg-black"></span>
+                <span className="block w-6 h-1  bg-black"></span>
               </>
             )}
           </div>

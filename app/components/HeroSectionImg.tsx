@@ -46,7 +46,7 @@ export default function HeroSectionImg({ title, description, expandBtnOnMobileVi
                 <img
                     src={images[0]}
                     alt="hero"
-                    className={`w-full ${heroSectionHeight ? 'h-64 md:h-96' : 'h-auto'} object-cover transition-transform duration-300 group-hover:scale-[1.02]`}
+                    className={`w-full ${heroSectionHeight ? 'h-64 md:h-[80vh]' : 'h-auto'} object-cover transition-transform duration-300 group-hover:scale-[1.02]`}
                 />
 
                 {/* Description Section for Our Service Component */}
@@ -65,16 +65,6 @@ export default function HeroSectionImg({ title, description, expandBtnOnMobileVi
                 >
                     <Image src={Expand} width='50' height='50' alt='hero section image expand button' className='' />
                 </button>
-
-
-                {/* Small mobile expand button */}
-                {/* <button
-                    onClick={() => setIsOpen(true)}
-                    className="md:hidden absolute bottom-3 right-3 bg-white/95 px-2 py-1 rounded-full shadow-sm text-xs"
-                    aria-label="Open gallery"
-                >
-                    <Image src={Expand} width='50' height='50' alt='hero section image expand button' className='w-[25px] h-[25px]' />
-                </button> */}
             </div>
 
             {/* FULLSCREEN OVERLAY */}
@@ -82,7 +72,7 @@ export default function HeroSectionImg({ title, description, expandBtnOnMobileVi
                 isOpen && (
                     <div
                         ref={overlayRef}
-                        className="fixed inset-0 z-5 flex items-end md:items-start justify-center p-6 md:p-12"
+                        className="fixed inset-0 z-5 flex items-end md:items-start justify-center p-6 md:p-12 "
                         role="dialog"
                         aria-modal="true"
                     >
@@ -93,42 +83,38 @@ export default function HeroSectionImg({ title, description, expandBtnOnMobileVi
                         />
 
                         {/* panel */}
-                        <div className="relative z-10 w-full max-w-6xl h-[80vh] md:h-[85vh]">
+                        <div className="relative z-10 w-full max-w-6xl h-[80%] md:h-full">
                             {/* close */}
-                            <button
-                                onClick={() => setIsOpen(false)}
-                                className="absolute top-4 right-4 z-20 bg-white rounded-full px-3 py-2 shadow-md"
-                                aria-label="Close gallery"
-                            >
-                                ✕
-                            </button>
+
 
                             {/* scrollable images */}
                             <div
-                                className="h-full w-full overflow-x-auto overflow-y-hidden snap-x snap-mandatory flex gap-4 py-6 "
+                                className="h-full w-full overflow-x-auto overflow-y-hidden snap-x snap-mandatory flex gap-4 py-6"
                                 style={{ scrollSnapType: "x mandatory" }}
                             >
                                 {images.map((src, i) => (
                                     <div
                                         key={i}
-                                        className="flex-shrink-0 mt-[10%] w-full md:w-[80%] lg:w-[70%] h-[50vh] snap-center  overflow-hidden shadow-xl"
+                                        className="flex flex-shrink-0 w-full md:w-[90%] h-full border  lg:w-[70%]  snap-center items-center  overflow-hidden shadow-xl"
                                     >
                                         <img
                                             src={src}
                                             alt={`Img - ${i}`}
-                                            className="w-full h-full object-contain "
+                                            className="w-full h-64 md:h-auto  "
                                             draggable={false}
                                         />
                                     </div>
                                 ))}
+
+                                <button
+                                    onClick={() => setIsOpen(false)}
+                                    className="flex items-center justify-center absolute bottom-10 right-4 z-20 bg-white rounded-full px-3 py-2 shadow-md hover:cursor-pointer hover:bg-[#ffffffcb] w-[30px] h-[30px] md:w-[50px] md:h-[50px]"
+                                    aria-label="Close gallery"
+                                >
+                                    ✕
+                                </button>
                             </div>
 
-                            {/* dots */}
-                            {/* <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20 flex gap-2">
-                            {images.map((_, i) => (
-                                <div key={i} className="w-2 h-2 rounded-full bg-white/60" />
-                            ))}
-                        </div> */}
                         </div>
                     </div>
                 )
