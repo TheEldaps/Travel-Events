@@ -11,10 +11,11 @@ interface HeroSectionImgProps {
     description?: string
     expandBtnOnMobileView?: boolean
     heroSectionHeight?: boolean
+    showEllipsePictureFrame?: boolean
 
 }
 
-export default function HeroSectionImg({ title, description, expandBtnOnMobileView = true, images = [], heroSectionHeight = false }: HeroSectionImgProps) {
+export default function HeroSectionImg({ title, description, expandBtnOnMobileView = true, images = [], heroSectionHeight = false, showEllipsePictureFrame = true }: HeroSectionImgProps) {
     const [isOpen, setIsOpen] = useState(false);
     const overlayRef = useRef<HTMLDivElement | null>(null);
 
@@ -38,7 +39,7 @@ export default function HeroSectionImg({ title, description, expandBtnOnMobileVi
 
     return (
         <div className="relative">
-            <div className='flex justify-end  '>
+            <div className={`${showEllipsePictureFrame ? 'flex' : 'hidden'} justify-end  `}>
                 <EllipsePictureFrame />
             </div>
             {/* HERO CARD */}

@@ -9,20 +9,20 @@ import HeroSectionImg from './HeroSectionImg'
 
 export default function ServiceSection() {
     return (
-        <section id='services' className=' px-[5%] sm:px-[10%] pt-10 lg:pt-20 '>
-            <div className='flex justify-between gap-[5%]  mb-[30px]'>
+        <section id='services' className=' relative px-[5%] sm:px-[10%] pt-10 lg:pt-20 '>
+            <div className='flex justify-between  mb-[30px]'>
                 <div className='max-w-[50%] lg:max-w-[70%] grow '>
                     <h2 className='text-[2rem] lg:text-[3rem] font-semibold'>Our <span className='text-[#026EFF] font-[dmserifitalics] font-normal italic'>Services</span></h2>
                     <p className='font-[dmsans] text-[0.8rem] md:text-[1rem] lg:text-[1.1rem] text-[#7B7B7B] '>Where will your next adventure take you? Check out these top destinations loved by travelers around the world.</p>
                 </div>
-                <div className='w-[28%] max-w-[200px]'>
+                <div className='flex justify-end w-full'>
                     <EllipsePictureFrame />
                 </div>
             </div>
 
             <section>
                 <div className='mb-15'>
-                    <HeroSectionImg images={['/ServiceImage1.png', '/ServiceImage2.png']} title='Group Travel Planning' description="From destination weddings to girls' getaways and family reunions, we specialize in coordinating all aspects of group travel. We handle logistics, accommodations, excursions, and communication so you can focus on the fun" expandBtnOnMobileView={false} heroSectionHeight={false} />
+                    <HeroSectionImg images={['/ServiceImage1.png', '/ServiceImage2.png']} title='Group Travel Planning' description="From destination weddings to girls' getaways and family reunions, we specialize in coordinating all aspects of group travel. We handle logistics, accommodations, excursions, and communication so you can focus on the fun" expandBtnOnMobileView={false} heroSectionHeight={false} showEllipsePictureFrame={false} />
                 </div>
                 <ServiceItems image={ServiceImage2} title='All-Inclusive Vacation Packages' description='Curated travel experiences with luxury accommodations, meals, and entertainment included—making travel effortless and enjoyable from start to finish.' />
 

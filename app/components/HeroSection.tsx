@@ -1,6 +1,5 @@
 import Button from "../components/Button";
 import Image from "next/image";
-import HeroSectionImage from '../components/HeroSectionImage'
 import HeroSectionImg from './HeroSectionImg'
 
 export default function HeroSection() {
