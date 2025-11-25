@@ -21,7 +21,7 @@ export default function ServiceSection() {
             </div>
 
             <section>
-                <div className='mb-15'>
+                <div className='mb-5 md:mb-15'>
                     <HeroSectionImg images={['/ServiceImage1.png', '/ServiceImage2.png']} title='Group Travel Planning' description="From destination weddings to girls' getaways and family reunions, we specialize in coordinating all aspects of group travel. We handle logistics, accommodations, excursions, and communication so you can focus on the fun" expandBtnOnMobileView={false} heroSectionHeight={false} showEllipsePictureFrame={false} />
                 </div>
                 <ServiceItems image={ServiceImage2} title='All-Inclusive Vacation Packages' description='Curated travel experiences with luxury accommodations, meals, and entertainment included—making travel effortless and enjoyable from start to finish.' />

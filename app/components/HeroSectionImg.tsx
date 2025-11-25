@@ -38,7 +38,7 @@ export default function HeroSectionImg({ title, description, expandBtnOnMobileVi
     }, [isOpen]);
 
     return (
-        <div className="relative">
+        <div className="relative border">
             <div className={`${showEllipsePictureFrame ? 'flex' : 'hidden'} justify-end  `}>
                 <EllipsePictureFrame />
             </div>
