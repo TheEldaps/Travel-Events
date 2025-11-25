@@ -95,7 +95,7 @@ export default function HeroSectionImg({ title, description, expandBtnOnMobileVi
                                 {images.map((src, i) => (
                                     <div
                                         key={i}
-                                        className="flex flex-shrink-0 w-full md:w-[90%] h-full border  lg:w-[70%]  snap-center items-center  overflow-hidden shadow-xl"
+                                        className="flex flex-shrink-0 w-full md:w-[90%] h-full  lg:w-[70%]  snap-center items-center  overflow-hidden shadow-xl"
                                     >
                                         <img
                                             src={src}
