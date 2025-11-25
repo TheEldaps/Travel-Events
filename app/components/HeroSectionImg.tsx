@@ -116,7 +116,7 @@ export default function HeroSectionImg({ title, description, expandBtnOnMobileVi
                                         <img
                                             src={src}
                                             alt={`Img - ${i}`}
-                                            className="w-full h-full object-contain bg-black rounded-lg"
+                                            className="w-full h-full object-contain "
                                             draggable={false}
                                         />
                                     </div>
