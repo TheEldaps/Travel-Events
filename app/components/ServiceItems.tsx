@@ -3,7 +3,7 @@ import EllipsePictureFrame from './EllipsePictureFrame'
 
 export default function ServiceItems({ image, title, description }: { image: StaticImageData, title: string, description: string }) {
     return (
-        <div className='border mb-7 md:mb-15 md:relative '>
+        <div className=' mb-7 md:mb-15 md:relative '>
             <div className='flex justify-end  '>
                 <EllipsePictureFrame />
             </div>
