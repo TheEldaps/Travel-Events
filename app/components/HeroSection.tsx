@@ -1,6 +1,7 @@
 import Button from "../components/Button";
 import Image from "next/image";
 import HeroSectionImage from '../components/HeroSectionImage'
+import HeroSectionImg from './HeroSectionImg'
 
 export default function HeroSection() {
   return (
@@ -9,10 +10,11 @@ export default function HeroSection() {
         Where Travel, Fun and Easy Planning Comes{" "}
         <br className="inline sm:hidden lg:inline" /> together
       </h1>
-      <Button title="Book a Vacation" text="text-[1rem] md:text-[1.5rem]" />
+      <Button title="Book a Vacation" text="text-[1rem] md:text-[1.5rem] mb-5 md:mb-10 " />
 
-      <HeroSectionImage images={['/HeroImage.png', '/ServiceImage1.png', '/serviceImage2.png']} />
+      {/* <HeroSectionImage images={['/HeroImage.png', '/ServiceImage1.png', '/serviceImage2.png']} /> */}
 
+      <HeroSectionImg images={['/HeroImage.png', '/ServiceImage1.png', '/serviceImage2.png']} />
       <p className='flex font-[dmsans] justify-between pt-5 text-[#026EFF]'><span>Vacation/Events</span><span>Made</span><span>Easy</span></p>
     </section>
   );

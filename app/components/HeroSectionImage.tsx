@@ -33,8 +33,8 @@ export default function ExpandableImage({ images }: { images: string[] }) {
         <div className="relative ">
             <div className='flex mt-15 overflow-x-auto gap-3 snap-x snap-mandatory pb-3 relative'>
                 {images.map((src, i) => (
-                    <div key={i} className="relative w-full h-auto snap-center shrink-0 rounded-xl overflow-hidden">
-                        <Image src={src} width='500' height='500' alt="hero image" className="w-full h-full rounded-b-2xl" />
+                    <div key={i} className="relative w-full h-auto snap-center shrink-0 rounded-xl overflow-hidden backdrop-blur-xl">
+                        <Image src={src} width='500' height='500' alt="hero image" className="w-full h-full max-h-[80vh] shadow-2xl rounded-b-2xl" />
                     </div>
                 ))}
             </div>
