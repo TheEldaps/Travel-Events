@@ -4,11 +4,13 @@ import React, { useState, useEffect, useRef } from "react";
 import Expand from '../../public/Expand.png'
 import Image from "next/image";
 
-interface HeroExpandableProps {
+interface HeroSectionImgProps {
     images: string[];
+    title?: string;
+    description?: string
 }
 
-export default function HeroExpandable({ images = [] }: HeroExpandableProps) {
+export default function HeroSectionImg({ title, description, images = [] }: HeroSectionImgProps) {
     const [isOpen, setIsOpen] = useState(false);
     const overlayRef = useRef<HTMLDivElement | null>(null);
 
@@ -39,6 +41,14 @@ export default function HeroExpandable({ images = [] }: HeroExpandableProps) {
                     alt="hero"
                     className="w-full h-64 object-cover md:h-96 transition-transform duration-300 group-hover:scale-[1.02]"
                 />
+
+                {/* Description Section for Our Service Component */}
+                {description && (
+                    <div className='font-[dmsans] mt-5 md:max-w-[400px] md:absolute bottom-[4%] md:rounded-xl left-[2%] md:text-white md:w-[50%] md:p-5 md:backdrop-blur-md md:bg-[#195C8933] md:border border-[#BABABA]'>
+                        <h3 className='mb-2 font-medium text-[1.2rem] md:text-[1.1rem] lg:text-[1.5rem]'>{title}</h3>
+                        <p className='font-light text-[1rem] leading-6 md:text-[0.95rem] lg:text-[1.1rem]'>{description}</p>
+                    </div>
+                )}
 
                 {/* Expand button (md and up) */}
                 <button
