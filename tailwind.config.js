@@ -17,7 +17,7 @@ module.exports = {
         librefranklin: ["--font-librefranklin", "sans-serif"],
       },
     },
-    safelist: ["md:rotate-[-5deg]", "md:rotate-[5deg]", "md:rotate-[0deg]"],
+    safelist: ["lg:rotate-[-5deg]", "lg:rotate-[5deg]", "lg:rotate-[0deg]"],
     plugins: [],
   }
 }

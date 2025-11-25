@@ -1,8 +1,12 @@
 import Image, { StaticImageData } from 'next/image'
+import EllipsePictureFrame from './EllipsePictureFrame'
 
 export default function ServiceItems({ image, title, description }: { image: StaticImageData, title: string, description: string }) {
     return (
         <div className='mb-15 md:relative '>
+            <div className='flex justify-end  '>
+                <EllipsePictureFrame />
+            </div>
             <Image src={image} width='1000' height='400' alt='Service section image' className='w-full h-auto' />
 
             <div className='font-[dmsans] mt-5 md:max-w-[400px] md:absolute bottom-[4%] md:rounded-xl left-[2%] md:text-white md:w-[50%] md:p-5 md:backdrop-blur-md md:bg-[#195C8933] md:border border-[#BABABA]'>

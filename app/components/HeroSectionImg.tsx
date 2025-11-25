@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Expand from '../../public/Expand.png'
 import Image from "next/image";
+import EllipsePictureFrame from "./EllipsePictureFrame";
 
 interface HeroSectionImgProps {
     images: string[];
@@ -37,6 +38,9 @@ export default function HeroSectionImg({ title, description, expandBtnOnMobileVi
 
     return (
         <div className="relative">
+            <div className='flex justify-end  '>
+                <EllipsePictureFrame />
+            </div>
             {/* HERO CARD */}
             <div className="group relative rounded-2xl lg overflow-hidden ">
                 <img

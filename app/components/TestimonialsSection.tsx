@@ -11,7 +11,7 @@ export default function TestimonialsSection() {
     <section className=" px-[5%] sm:px-[10%] my-20 lg:mt-30">
       <Heading heading1='Hear from Our' heading2='Happy Travelers' />
 
-      <div className=" md:flex mt-15 gap-10 mb-10 ">
+      <div className=" md:flex flex-wrap lg:flex-nowrap mt-15 gap-10 mb-10 ">
         <Testimonials
           rotate="rotate-[-5deg]"
           image={CommentersImage1}
