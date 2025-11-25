@@ -8,9 +8,12 @@ interface HeroSectionImgProps {
     images: string[];
     title?: string;
     description?: string
+    expandBtnOnMobileView?: boolean
+    heroSectionHeight?: boolean
+
 }
 
-export default function HeroSectionImg({ title, description, images = [] }: HeroSectionImgProps) {
+export default function HeroSectionImg({ title, description, expandBtnOnMobileView = true, images = [], heroSectionHeight = false }: HeroSectionImgProps) {
     const [isOpen, setIsOpen] = useState(false);
     const overlayRef = useRef<HTMLDivElement | null>(null);
 
@@ -35,11 +38,11 @@ export default function HeroSectionImg({ title, description, images = [] }: Hero
     return (
         <div className="relative">
             {/* HERO CARD */}
-            <div className="group relative rounded-2xl lg overflow-hidden shadow-lg ">
+            <div className="group relative rounded-2xl lg overflow-hidden ">
                 <img
                     src={images[0]}
                     alt="hero"
-                    className="w-full h-64 object-cover md:h-96 transition-transform duration-300 group-hover:scale-[1.02]"
+                    className={`w-full ${heroSectionHeight ? 'h-64 md:h-96' : 'h-auto'} object-cover transition-transform duration-300 group-hover:scale-[1.02]`}
                 />
 
                 {/* Description Section for Our Service Component */}
@@ -53,11 +56,12 @@ export default function HeroSectionImg({ title, description, images = [] }: Hero
                 {/* Expand button (md and up) */}
                 <button
                     onClick={() => setIsOpen(true)}
-                    className="flex items-center justify-center absolute bottom-4 right-4 bg-white px-2 py-3 rounded-full shadow-md  hover:cursor-pointer hover:bg-[#ffffffc4] w-[30px] h-[30px] md:w-[50px] md:h-[50px]  "
+                    className={`${expandBtnOnMobileView ? 'flex' : 'hidden md:flex'} items-center justify-center absolute bottom-4 right-4 bg-white px-2 py-3 rounded-full shadow-md  hover:cursor-pointer hover:bg-[#ffffffc4] w-[30px] h-[30px] md:w-[50px] md:h-[50px]`}
                     aria-label="Expand images"
                 >
                     <Image src={Expand} width='50' height='50' alt='hero section image expand button' className='' />
                 </button>
+
 
                 {/* Small mobile expand button */}
                 {/* <button
@@ -70,59 +74,61 @@ export default function HeroSectionImg({ title, description, images = [] }: Hero
             </div>
 
             {/* FULLSCREEN OVERLAY */}
-            {isOpen && (
-                <div
-                    ref={overlayRef}
-                    className="fixed inset-0 z-5 flex items-end md:items-start justify-center p-6 md:p-12"
-                    role="dialog"
-                    aria-modal="true"
-                >
-                    {/* backdrop blur */}
+            {
+                isOpen && (
                     <div
-                        className="absolute inset-0 bg-[#0000003b]  backdrop-blur-sm "
-                        onClick={() => setIsOpen(false)}
-                    />
-
-                    {/* panel */}
-                    <div className="relative z-10 w-full max-w-6xl h-[80vh] md:h-[85vh]">
-                        {/* close */}
-                        <button
-                            onClick={() => setIsOpen(false)}
-                            className="absolute top-4 right-4 z-20 bg-white rounded-full px-3 py-2 shadow-md"
-                            aria-label="Close gallery"
-                        >
-                            ✕
-                        </button>
-
-                        {/* scrollable images */}
+                        ref={overlayRef}
+                        className="fixed inset-0 z-5 flex items-end md:items-start justify-center p-6 md:p-12"
+                        role="dialog"
+                        aria-modal="true"
+                    >
+                        {/* backdrop blur */}
                         <div
-                            className="h-full w-full overflow-x-auto overflow-y-hidden snap-x snap-mandatory flex gap-4 py-6 "
-                            style={{ scrollSnapType: "x mandatory" }}
-                        >
-                            {images.map((src, i) => (
-                                <div
-                                    key={i}
-                                    className="flex-shrink-0 mt-[10%] w-full md:w-[80%] lg:w-[70%] h-[50vh] snap-center  overflow-hidden shadow-xl"
-                                >
-                                    <img
-                                        src={src}
-                                        alt={`Img - ${i}`}
-                                        className="w-full h-full object-contain bg-black rounded-lg"
-                                        draggable={false}
-                                    />
-                                </div>
-                            ))}
-                        </div>
+                            className="absolute inset-0 bg-[#0000003b]  backdrop-blur-sm "
+                            onClick={() => setIsOpen(false)}
+                        />
 
-                        {/* dots */}
-                        {/* <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20 flex gap-2">
+                        {/* panel */}
+                        <div className="relative z-10 w-full max-w-6xl h-[80vh] md:h-[85vh]">
+                            {/* close */}
+                            <button
+                                onClick={() => setIsOpen(false)}
+                                className="absolute top-4 right-4 z-20 bg-white rounded-full px-3 py-2 shadow-md"
+                                aria-label="Close gallery"
+                            >
+                                ✕
+                            </button>
+
+                            {/* scrollable images */}
+                            <div
+                                className="h-full w-full overflow-x-auto overflow-y-hidden snap-x snap-mandatory flex gap-4 py-6 "
+                                style={{ scrollSnapType: "x mandatory" }}
+                            >
+                                {images.map((src, i) => (
+                                    <div
+                                        key={i}
+                                        className="flex-shrink-0 mt-[10%] w-full md:w-[80%] lg:w-[70%] h-[50vh] snap-center  overflow-hidden shadow-xl"
+                                    >
+                                        <img
+                                            src={src}
+                                            alt={`Img - ${i}`}
+                                            className="w-full h-full object-contain bg-black rounded-lg"
+                                            draggable={false}
+                                        />
+                                    </div>
+                                ))}
+                            </div>
+
+                            {/* dots */}
+                            {/* <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20 flex gap-2">
                             {images.map((_, i) => (
                                 <div key={i} className="w-2 h-2 rounded-full bg-white/60" />
                             ))}
                         </div> */}
+                        </div>
                     </div>
-                </div>
-            )}
-        </div>
+                )
+            }
+        </div >
     );
 }

@@ -14,7 +14,7 @@ export default function HeroSection() {
 
       {/* <HeroSectionImage images={['/HeroImage.png', '/ServiceImage1.png', '/serviceImage2.png']} /> */}
 
-      <HeroSectionImg images={['/HeroImage.png', '/ServiceImage1.png', '/ServiceImage2.png']} />
+      <HeroSectionImg images={['/HeroImage.png', '/ServiceImage1.png', '/ServiceImage2.png']} heroSectionHeight={true} />
       <p className='flex font-[dmsans] justify-between pt-5 text-[#026EFF]'><span>Vacation/Events</span><span>Made</span><span>Easy</span></p>
     </section>
   );
